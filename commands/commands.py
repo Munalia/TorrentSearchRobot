@@ -11,16 +11,16 @@ from config import START_MESSAGE
 from helpers.torrent import torrent_search
 
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=START_MESSAGE, parse_mode="Markdown")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=START_MESSAGE, parse_mode="html")
 
 def torrent(update: Update, content: CallbackContext):
     if update.message.via_bot != None:
         return
-    search_message = content.bot.send_message(chat_id=update.effective_chat.id, text="Searching your torrent file")
+    search_message = content.bot.send_message(chat_id=update.effective_chat.id, text="🔍 sᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ᴛᴏʀʀᴇɴᴛ. #ʙᴇᴘᴀᴛɪᴇɴᴄᴇ🤗")
     torrent_name = update.effective_message.text
     response = torrent_search(torrent_name)
     if len(response) == 0:
-        content.bot.edit_message_text(chat_id=update.effective_chat.id, message_id=search_message.message_id, text="No results found")
+        content.bot.edit_message_text(chat_id=update.effective_chat.id, message_id=search_message.message_id, text="Sorry No Results Found For Your Request 😔")
         return
 
 

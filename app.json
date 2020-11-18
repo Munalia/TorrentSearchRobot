@@ -15,11 +15,11 @@
         },
         "START_MESSAGE": {
             "description": "",
-            "value": "*Hello!!\nI Am Torrent Searcher Robot Helps You To Find Fast Magnet Links\n\n\nMade with ❤️ By @CyberBoyAyush*"
+            "value": "*Hello!!\nI Am Torrent Searcher Robot Helps You To Find Fast Magnet Links\n\n\nMade with ❤️ By @KumarSwamiKS*"
         },
         "FOOTER_TEXT": {
             "description": "",
-            "value": "*Made with ❤️ by @CyberBoyAyush*",
+            "value": "*Made with ❤️ by @KumarSwamiKS*",
             "required": false
         }
     },
